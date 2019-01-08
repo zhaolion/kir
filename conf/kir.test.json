@@ -1,0 +1,10 @@
+{
+  "store": {
+    "dsn": "",
+    "max_open_conns": 8,
+    "max_idle_conns": 4,
+    "conn_max_life_time": 28800,
+    "log_level": "debug",
+    "show_sql": true
+  }
+}
