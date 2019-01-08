@@ -1,10 +1,39 @@
-hash: b6208bcaed466b7dbfade2d39387fe97703944448ae466881eaf274974a16dce
-updated: 2019-01-08T22:42:45.960928+08:00
+hash: 86df1cf57ff4a07807d2550c0d2b89a81f0ef609e04af8ef683e3b991849029b
+updated: 2019-01-08T23:58:51.306566+08:00
 imports:
+- name: github.com/BurntSushi/toml
+  version: 3012a1dbe2e4bd1391d42b32f0577cb7bbc7f005
+- name: github.com/go-xorm/builder
+  version: 03eb88feccce3e477c318ce7f6f1b386544ab20b
+- name: github.com/go-xorm/core
+  version: 6bc9412b1c4d00c0a5cc9dd939a245a82cc50227
 - name: github.com/go-xorm/xorm
   version: 1f39c590c64924f358c0d89016ac9b2bb84e9125
-- name: github.com/kit-x/xorm-migrator
-  version: 81c47467580cd7b90e4a58b6cefe46988d4c8c1b
-- name: github.com/labstack/echo
-  version: c7eb8da9ec73e78c4f38413f3f835e0cd52c7d72
-testImports: []
+- name: github.com/jinzhu/copier
+  version: 7e38e58719c33e0d44d585c4ab477a30f8cb82dd
+- name: github.com/spf13/afero
+  version: a5d6946387efe7d64d09dcba68cdd523dc1273a3
+  subpackages:
+  - mem
+- name: golang.org/x/text
+  version: e6919f6577db79269a6443b9dc46d18f2238fb5d
+  subpackages:
+  - transform
+  - unicode/norm
+- name: gopkg.in/yaml.v2
+  version: 51d6538a90f86fe93ac480b35f37b2be17fef232
+testImports:
+- name: github.com/davecgh/go-spew
+  version: d8f796af33cc11cb798c1aaeb27a4ebc5099927d
+  subpackages:
+  - spew
+- name: github.com/pmezard/go-difflib
+  version: 5d4384ee4fb2527b0a1256a821ebfc92f91efefc
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: ffdc059bfe9ce6a4e144ba849dbedead332c6053
+  subpackages:
+  - assert
+  - require
+  - suite

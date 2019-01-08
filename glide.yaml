@@ -1,7 +1,16 @@
 package: github.com/zhaolion/kir
 import:
-- package: github.com/kit-x/xorm-migrator
+- package: github.com/BurntSushi/toml
+  version: ^0.3.1
 - package: github.com/go-xorm/xorm
   version: ^0.7.1
-- package: github.com/labstack/echo
-  version: ^3.3.8
+- package: github.com/jinzhu/copier
+- package: github.com/spf13/afero
+  version: ^1.2.0
+- package: gopkg.in/yaml.v2
+  version: ^2.2.2
+testImport:
+- package: github.com/stretchr/testify
+  version: ^1.3.0
+  subpackages:
+  - suite
