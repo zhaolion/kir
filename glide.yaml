@@ -1,0 +1,7 @@
+package: github.com/zhaolion/kir
+import:
+- package: github.com/kit-x/xorm-migrator
+- package: github.com/go-xorm/xorm
+  version: ^0.7.1
+- package: github.com/labstack/echo
+  version: ^3.3.8

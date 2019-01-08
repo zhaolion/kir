@@ -1,0 +1,10 @@
+hash: b6208bcaed466b7dbfade2d39387fe97703944448ae466881eaf274974a16dce
+updated: 2019-01-08T22:42:45.960928+08:00
+imports:
+- name: github.com/go-xorm/xorm
+  version: 1f39c590c64924f358c0d89016ac9b2bb84e9125
+- name: github.com/kit-x/xorm-migrator
+  version: 81c47467580cd7b90e4a58b6cefe46988d4c8c1b
+- name: github.com/labstack/echo
+  version: c7eb8da9ec73e78c4f38413f3f835e0cd52c7d72
+testImports: []
