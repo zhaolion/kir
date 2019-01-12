@@ -1,4 +1,4 @@
-kir [![Build Status](https://travis-ci.org/zhaolion/kir.svg?branch=master)](https://travis-ci.org/zhaolion/kir) [![GoDoc](https://godoc.org/github.com/zhaolion/kir?status.svg)](https://godoc.org/github.com/zhaolion/kir) [![Go Report Card](https://goreportcard.com/badge/github.com/zhaolion/kir)](https://goreportcard.com/report/github.com/zhaolion/kir)  
+kir [![Build Status](https://travis-ci.org/zhaolion/kir.svg?branch=master)](https://travis-ci.org/zhaolion/kir) [![GoDoc](https://godoc.org/github.com/zhaolion/kir?status.svg)](https://godoc.org/github.com/zhaolion/kir) [![Go Report Card](https://goreportcard.com/badge/github.com/zhaolion/kir)](https://goreportcard.com/report/github.com/zhaolion/kir) [![codecov](https://codecov.io/gh/zhaolion/kir/branch/master/graph/badge.svg)](https://codecov.io/gh/zhaolion/kir)  
 =====================
 
 
