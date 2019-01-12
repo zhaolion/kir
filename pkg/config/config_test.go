@@ -2,6 +2,13 @@ package config
 
 import "os"
 
+func (suite *Suite) TestAddConfigPath() {
+	cfg := New()
+	count := len(cfg.configPaths)
+	cfg.AddPath("/test/path")
+	suite.Equal(1, len(cfg.configPaths)-count, "should add a path")
+}
+
 func (suite *Suite) TestJSON() {
 	cfg := &stubConfig{}
 	gotErr := Initialize(suite.JSONFile, cfg)

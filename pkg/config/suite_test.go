@@ -39,23 +39,23 @@ type Suite struct {
 // before each test
 func (suite *Suite) SetupSuite() {
 	suite.JSONFile = "test-json.json"
-	initConfig(suite.JSONFile, jsonExample)
+	_ = initConfig(suite.JSONFile, jsonExample)
 
 	suite.EnvFile = "test-env.json"
-	initConfig(suite.EnvFile, jsonExample)
+	_ = initConfig(suite.EnvFile, jsonExample)
 
 	suite.YAMLFile = "test-yaml.yml"
-	initConfig(suite.YAMLFile, yamlExample)
+	_ = initConfig(suite.YAMLFile, yamlExample)
 
 	suite.TOMLFile = "test-toml.toml"
-	initConfig(suite.TOMLFile, tomlExample)
+	_ = initConfig(suite.TOMLFile, tomlExample)
 }
 
 func (suite *Suite) TearDownSuite() {
-	os.Remove(suite.JSONFile)
-	os.Remove(suite.EnvFile)
-	os.Remove(suite.YAMLFile)
-	os.Remove(suite.TOMLFile)
+	_ = os.Remove(suite.JSONFile)
+	_ = os.Remove(suite.EnvFile)
+	_ = os.Remove(suite.YAMLFile)
+	_ = os.Remove(suite.TOMLFile)
 }
 
 // The SetupTest method will be run before every test in the suite.
@@ -71,7 +71,7 @@ func (suite *Suite) TearDownTest() {
 		kvs := strings.Split(pair, "=")
 
 		if len(kvs) > 2 {
-			os.Setenv(kvs[0], kvs[1])
+			_ = os.Setenv(kvs[0], kvs[1])
 		}
 	}
 }
@@ -91,7 +91,7 @@ func initConfig(file, config string) error {
 	defer outputFile.Close()
 
 	outputWriter := bufio.NewWriter(outputFile)
-	outputWriter.WriteString(config)
+	_, _ = outputWriter.WriteString(config)
 	return outputWriter.Flush()
 }
 

@@ -8,9 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/jinzhu/copier"
-
 	"github.com/BurntSushi/toml"
+	"github.com/jinzhu/copier"
 	"github.com/spf13/afero"
 	"github.com/zhaolion/kir/pkg/config/env"
 	"gopkg.in/yaml.v2"
@@ -194,7 +193,9 @@ func (c *Configer) processFile() error {
 
 func (c *Configer) unmarshalReader(in io.Reader) (interface{}, error) {
 	buf := new(bytes.Buffer)
-	buf.ReadFrom(in)
+	if _, err := buf.ReadFrom(in); err != nil {
+		return nil, err
+	}
 	cfg := copyObject(c.container)
 
 	switch strings.ToLower(c.getConfigType()) {
